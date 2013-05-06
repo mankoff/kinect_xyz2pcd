@@ -3,10 +3,10 @@
 ## kinect_xyz2pcd
 
 This code allows data captured with the OpenKinect 'record' program or
-my modified [kinect_record][https://githuDb.com/mankoff/kinect_record]
+my modified [kinect_record](https://githuDb.com/mankoff/kinect_record)
 program to be used with the Point Cloud Library (PCL) KinFu
 algorithm. It uses the outputs of
-[kinect_register][https://github.com/mankoff/libfreenect/tree/offline_register]
+[kinect_register](https://github.com/mankoff/libfreenect/tree/offline_register)
 as the inputs.  
 
 ## Dependencies and Other Useful Tools
