@@ -1,20 +1,20 @@
 
 
-== kinect_xyz2pcd ==
+## kinect_xyz2pcd
 
 This code allows data captured with the OpenKinect 'record' program or
 my modified kinect_record https://github.com/mankoff/kinect_record
 program to be used with the Point Cloud Library (PCL) KinFu
 algorithm. It uses the outputs of kinect_register as the inputs.
 
-== Dependencies and Other Useful Tools ==
+## Dependencies and Other Useful Tools
 
 https://github.com/mankoff/libfreenect
 https://github.com/mankoff/libfreenect/tree/offline_register
 https://github.com/mankoff/kinect_record/
 http://pointclouds.org/
 
-== NOTE ==
+## NOTE
 
 You should consider collecting data directly with PCL and using KinFu
 in realtime or using the PCL PCD-grabber code if possible. The only
@@ -23,7 +23,7 @@ reason. Most likely, this reason would be that PCL requires a much
 more powerful laptop, while libfreenect can run on a smaller and
 lighter computer for field data collection.
 
-== Usage ==
+## Usage
 
 To use this code, call the program with 4 arguments: The x, y, and z file and then
 name of the PCD file you want to create:
@@ -51,7 +51,7 @@ rm *.{x,y,z}                           # clean up the x,y,z files
 pcl_kinfu_largeScale -pcd .
 ```
 
-== Installation ==
+## Installation
 
 ```bash
 cmake .
