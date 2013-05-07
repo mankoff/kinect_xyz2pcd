@@ -46,7 +46,7 @@ for f in *.pgm; do kinect_register -a Kx.regdump.dat $f; done
 rm *.ply                   # clean up the PLY files. We don't use them
 
 # now, use this code to convert the x, y, and z files to PCD
-for f in *.z; do ~/projects/Kinect/ply2pcd/ply2pcd ${f%.*}.{x,y,z,pcd}; done
+for f in *.z; do kinect_xyz2pcd ${f%.*}.{x,y,z,pcd}; done
 rm *.{x,y,z}                           # clean up the x,y,z files
 
 # process the PCD files with KinFu
