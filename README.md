@@ -50,7 +50,7 @@ for f in *.z; do kinect_xyz2pcd ${f%.*}.{x,y,z,pcd}; done
 rm *.{x,y,z}                           # clean up the x,y,z files
 
 # process the PCD files with KinFu
-pcl_kinfu_largeScale -pcd .
+pcl_kinfu_largeScale -pcd . -pcd_fps 0
 ```
 
 ## Installation
