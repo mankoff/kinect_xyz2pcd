@@ -44,7 +44,7 @@ main (int argc, char** argv)
       cloud_xyzrgba.points[i].z = zz[i]/1E3;
       cloud_xyzrgba.points[i].rgba = 0;
     }
-  pcl::io::savePCDFile (argv[4], cloud_xyzrgba, true);
+  pcl::io::savePCDFileBinaryCompressed (argv[4], cloud_xyzrgba );
   
   return (0);
 }
